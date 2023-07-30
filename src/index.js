@@ -1,4 +1,5 @@
 import express from "express";
+// Routes
 import v1WorkoutRouter from "./v1/routes/workOutRouter.js";
 
 const app = express();
