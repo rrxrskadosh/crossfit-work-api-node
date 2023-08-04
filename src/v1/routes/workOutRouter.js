@@ -1,9 +1,9 @@
 // In src/v1/routes/workoutRoutes.js
-import express from 'express';
+const express = require("express");
 const router = express.Router();
 
 // Controllers 
-import workoutController from "../../controllers/workoutController.js"
+const workoutController = require("../../controllers/workoutController.js")
 
 router
     .get("/", workoutController.getAllWorkouts)
@@ -12,4 +12,4 @@ router
     .patch("/:workoutId", workoutController.updateOneWorkout)
     .delete("/:workoutId", workoutController.deleteOneWorkout);
 
-export default router;
+module.exports = router;

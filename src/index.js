@@ -1,6 +1,6 @@
-import express from "express";
+const express = require("express");
 // Routes
-import v1WorkoutRouter from "./v1/routes/workOutRouter.js";
+const v1WorkoutRouter = require("./v1/routes/workOutRouter.js");
 
 const app = express();
 const PORT = process.env.PORT || 3004;
